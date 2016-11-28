@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon compte</title>
+    <link rel="stylesheet" type ="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <img class ="logo" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo.png" height = "50" width = "150">
+          </div>
+          <form class="navbar-form navbar-left">
+           <a class="navbar-brand" href ="cible.html"> Accueil </a>
+           <a class="navbar-brand" href ="notifications.html"> Notifications </a>
+           <a class="navbar-brand" href ="informations.html"> Mon Compte </a>
+          <input class="form-control" type="text" placeholder="Rechercher">
+          <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+          <div class = "nav navbar-nav navbar-right">
+          <a class="navbar-brand" href ="#" data-toggle="modal" data-target="#ModalConnexion"> <div class = "deco">Deconnexion </div> </a>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="ModalConnexion">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Déonnexion</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+              <a href="maquette.html" class="btn btn-primary">Se déconnecter</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <article>
+          <ul class="list-inline">
+          <li><a href="informations.html">Informations personnelles</a></li>
+          <li><a href="infos_ad.html">Informations des ayants droits</a></li>
+          <li><a href="justificatifs.html">Informations bancaires et justificatifs</a></li>
+        </article>
+      </section>
+      <section>
+      <article>
+        <p> 
+        Votre RIB : FR7630001007941234567890185 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalrib">Editer</button></p></br>
+        <a href = "#" onclick="my_download()">Acte de naissance/contrat de mariage</a> </br>
+        <a href = "#" onclick="my_download()">Passeports et cartes d'identité </a> </br>
+        <a href = "#" onclick="my_download()">Factures</a> </br>
+        </p>
+        <div class="modal fade" id="Modalrib">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Modification IBAN</h4>
+            </div>
+            <div class="modal-body">
+              <form method = "post" cible = justificatifs.html>
+                <label for = "text"> Ancien IBAN : </label>
+                <input type = "text" name = "iban" />
+                </br>
+                <label for = "text"> Nouvel IBAN : </label>
+                <input type = "text" name = "new_iban" />
+                </br>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler </button>
+              <a href="justificatifs.html" class="btn btn-primary">Confirmer</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      </section>
+       <footer>
+      <div class = "row">
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Contact : </h5>
+      <p> Téléphone : 01 02 03 04 05 </br> 
+      Adresse : 16 rue des Eglantiers 93270 Sevran </br> Email : contact@bnpparisbas.net </br> 
+      <a href="contact.html">Nous contacter</a>
+      </p>
+      </div>
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Nous suivre : </h5>
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/twitter.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/fb.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/inst.png" height = "40" width = "40">
+       </div>
+       <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> A propos de nous </h5>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      </div>
+      </div>
+      </footer>
+      <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+  </html>

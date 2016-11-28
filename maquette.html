@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>BNP Paribas</title>
+    <link rel="stylesheet" type ="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <img class ="logo" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo.png" height = "50" width = "150">
+          </div>
+          <form class="navbar-form navbar-left">
+           <a class="navbar-brand" href ="maquette.html"> Accueil </a>
+            <input class="form-control" type="text" placeholder="Rechercher">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+          <ul class = "nav navbar-nav navbar-right">
+            <li class ="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href ="#">Identification<span class="caret"></span></a>
+              <ul class = "dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">S'inscrire</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ModalConnexion">Se connecter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="modal fade" id="ModalConnexion">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Connexion</h4>
+            </div>
+            <div class="modal-body">
+              <form method = "post">
+                <label for = "text"> Pseudo : </label>
+                <input type = "login" name = "login" />
+                </br>
+                <label for = "password"> Mot de passe : </label>
+                <input type = "password" name = "password" />
+                </br>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Mot de passe oublié ?</button>
+              <a href="cible.html" class="btn btn-primary">Se connecter</a>
+            </div>
+          </div>
+      </header>
+      <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="sw.jpg" alt="Avt première SW">
+              <div class= "carousel-caption">
+                <h1> Avant première</h1>
+                <p>
+                   Le 14 décembre, la BNP bénéficie d?une projection avant-première du nouveau Star Wars. Les places sont disponibles à l?achat sur la billetterie du CE. 
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="ouzbekistan.jpg" alt="Voyage en Ouzbekistan">
+              <div class= "carousel-caption">
+                <h1> Voyage en Ouzbékistan</h1>
+                <p>
+                   Un voyage collectif est organisé : en Ouzbékistan. Des places sont encore disponibles.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="midi.jpg" alt="Colonie de vacances midi pyrénées">
+              <div class= "carousel-caption">
+                <h1> Colonie Midi-Pyrénées</h1>
+                <p>
+                   Une colonie de vacances en Midi-Pyrénées a été réservée par le CE pour les enfants des salariés BNP Paribas et ses filiales.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="enfant.jpg" alt="Modification des frais garde d'enfant">
+              <div class= "carousel-caption">
+                <h1> Nouveaux remboursements frais garde d'enfant </h1>
+                <p>
+                   Nouvelles conditions de remboursement des frais de garde pour vos enfants. Voir.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <!--Temoignages-->
+      <section>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <h4> Bart</h4>
+      <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </article>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <h4> Homer </h4>
+      <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </article>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <h4> Marge </h4>
+      <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+      </article>
+      </section>
+      <!--Logos-->
+      <section>
+      <h4> Nos partenaires</h4>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <img class ="logo2" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo-fnac.png" height = "150" width = "150">
+      </article>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <img class ="logo2" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo-kadeos.jpg" height = "100" width = "200">
+      </article>
+      <article class="col-xs 12 col-sm-12 col-lg-4 col-md-4">  
+      <img class ="logo2" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo-gaumont.jpg" height = "100" width = "200">
+      </article>
+      </section>
+      <footer>
+      <div class = "row">
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Contact : </h5>
+      <p> Téléphone : 01 02 03 04 05 </br> 
+      Adresse : 16 rue des Eglantiers 93270 Sevran </br> Email : contact@bnpparisbas.net </br> 
+      <a href="contacts.html">Nous contacter</a>
+      </p>
+      </div>
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Nous suivre : </h5>
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/twitter.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/fb.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/inst.png" height = "40" width = "40">
+       </div>
+       <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> A propos de nous </h5>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      </div>
+      </div>
+      </footer>
+      <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </body>

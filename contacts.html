@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>BNP Paribas</title>
+    <link rel="stylesheet" type ="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <img class ="logo" src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/maquette/logo.png" height = "50" width = "150">
+          </div>
+          <form class="navbar-form navbar-left">
+           <a class="navbar-brand" href ="maquette.html"> Accueil </a>
+            <input class="form-control" type="text" placeholder="Rechercher">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+          <ul class = "nav navbar-nav navbar-right">
+            <li class ="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href ="#">Identification<span class="caret"></span></a>
+              <ul class = "dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">S'inscrire</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#ModalConnexion">Se connecter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="modal fade" id="ModalConnexion">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Connexion</h4>
+            </div>
+            <div class="modal-body">
+              <form method = "post">
+                <label for = "text"> Pseudo : </label>
+                <input type = "login" name = "login" />
+                </br>
+                <label for = "password"> Mot de passe : </label>
+                <input type = "password" name = "password" />
+                </br>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Mot de passe oublié ?</button>
+              <a href="cible.html" class="btn btn-primary">Se connecter</a>
+            </div>
+          </div>
+      </header>
+     <section>
+      <h5> Notre adresse : </h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.839708816199!2d2.517703015171424!3d48.93749477929535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61479e55ec86d%3A0x33e33109f67890f2!2s16+Rue+des+%C3%89glantiers%2C+93270+Sevran!5e0!3m2!1sfr!2sfr!4v1480082525721" width="390" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+      <section>
+      <h5> Nous envoyer un message : </h5>
+     <form method = "post" action = "contact.html" >
+      <label for = "email"> E Mail : </label> <input type = "email" name = "email" /></br>
+      <label for = "objet"> Objet du message : </label><input type="text" name="objet"></br>
+      <label for = "textarea"> Message : </label><textarea name="le-message" rows="6" cols="40">Saisissez votre message</textarea></br>
+      <input type = "submit" value = "Envoyer"/>
+     </section>
+      <footer>
+      <div class = "row">
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Contact : </h5>
+      <p> Téléphone : 01 02 03 04 05 </br> 
+      Adresse : 16 rue des Eglantiers 93270 Sevran </br> Email : contact@bnpparisbas.net </br> 
+      <a href="contacts.html">Nous contacter</a>
+      </p>
+      </div>
+      <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> Nous suivre : </h5>
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/twitter.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/fb.png" height = "40" width = "40">
+       <img src = "/Users/anthonybenito/Documents/Cours/TWEB/benito_a/inst.png" height = "40" width = "40">
+       </div>
+       <div class = "col-xs 12 col-sm-12 col-lg-4 col-md-4">
+      <h5> A propos de nous </h5>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      </div>
+      </div>
+      </footer>
+      <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </body>
